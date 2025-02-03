@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Hawaii International Conference on Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>2025 Hawaii International Conference on Education</h1>
+    </header>
+    <main>
+        <section id="attendee-info">
+            <h2>Attendee Information</h2>
+            <form>
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="university">University/Affiliation*</label>
+                <input type="text" id="university" name="university" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="text-updates" name="text-updates">
+                    <label for="text-updates">Yes, it's okay to send me text messages including confirmations, changes, updates, and/or promotions. Message frequency varies. Message and data rates may apply. View our terms of service & privacy policy.</label>
+                </div>
+            </form>
+        </section>
+
+        <section id="registration-fees">
+            <h2>Registration Fees*</h2>
+            <div class="fee-option">
+                <input type="radio" id="conf-reg-fee" name="registration-fee" value="565" required>
+                <label for="conf-reg-fee">Conference Registration Fee ($565.00)</label>
+                <p>Registration fee includes:</p>
+                <ul>
+                    <li>Daily breakfast for the registrant (January 4th-7th)</li>
+                    <li>Mid-morning and afternoon coffee breaks</li>
+                    <li>Admission to sessions</li>
+                    <li>A printed copy of the conference program</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="extra-tickets">
+            <h2>Extra Breakfast Tickets for Guests of Registrants</h2>
+            <div class="ticket-option">
+                <label for="adult-tickets">Additional ADULT Breakfast Ticket(s) (for guest of Attendee)</label>
+                <p>Breakfast for yourself is INCLUDED with registration. These extra tickets are optional and for your spouse/guest/friends. Ticket price is per DAY. Breakfast is served each morning (4 days), so if you want a guest to join you each morning, you would need to purchase FOUR (4) tickets.</p>
+                <input type="number" id="adult-tickets" name="adult-tickets" min="0" value="0">
+                <span>$50.00 ea.</span>
+            </div>
+
+            <div class="ticket-option">
+                <label for="child-tickets">Additional Daily CHILD (ages 5-12) Breakfast Ticket(s) (for guest of Attendee)</label>
+                <p>Breakfast for yourself is INCLUDED with registration. These extra tickets are optional and for your spouse/guest/friends. Ticket price is per DAY. Breakfast is served each morning (4 days), so if you want a guest to join you each morning, you would need to purchase FOUR (4) tickets.</p>
+                <input type="number" id="child-tickets" name="child-tickets" min="0" value="0">
+                <span>$25.00 ea.</span>
+            </div>
+        </section>
+
+        <section id="total">
+            <h2>Running Total</h2>
+            <p>$0.00</p>
+        </section>
+
+        <section id="refund-policy">
+            <h2>Refund Policy*</h2>
+            <p>All refund requests must be received in writing (email) by December 14, 2024. There will be a $75 service charge for all refunds (Except for those that register at the Super Early Bird Rate).</p>
+            <div class="checkbox">
+                <input type="checkbox" id="refund-agree" name="refund-agree" required>
+                <label for="refund-agree">I have read and agree to the terms above.</label>
+            </div>
+        </section>
+
+        <section id="official-use">
+            <h2>(Leave Blank) For Official Use Only</h2>
+            <p>XXXX</p>
+        </section>
+
+        <button type="submit">Save Attendee</button>
+    </main>
+    <footer>
+        <p>Event Registration Software by RegFox</p>
+    </footer>
+</body>
+</html>
